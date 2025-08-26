@@ -27,9 +27,9 @@ const Xeader = () => {
                 }`}
         >
             <section className="flex justify-between items-center">
-                
+
                 <div className="flex items-center gap-x-5">
-                    <Link className="border px-2 py-2 rounded-full">BM</Link>
+                    <Link className="border px-2 py-2 rounded-full max-lg:hidden">BM</Link>
 
                     {/* Desktop nav */}
                     <nav className="hidden lg:flex items-center gap-x-5">
@@ -58,36 +58,6 @@ const Xeader = () => {
                             Anime
                         </NavLink>
                     </nav>
-
-                    <ul className='flex items-center gap-x-5'>
-                        <li>
-                            {/* Mobile Hamburger */}
-                            <div className="lg:hidden">
-                                <button
-                                    onClick={() => setMenuOpen(!menuOpen)}
-                                    className="border py-2 px-2 rounded-md bg-white/15"
-                                >
-                                    <img
-                                        width={24}
-                                        height={24}
-                                        src={menu}
-                                        alt="menu" />
-                                </button>
-                            </div>
-                        </li>
-                        <div className="lg:hidden">
-                            <button
-                                onClick={() => setSettingsOpen(!settingsOpen)}
-                                className="border py-2 px-2 rounded-md bg-white/15"
-                            >
-                                <img
-                                    width={24}
-                                    height={24}
-                                    src={settings}
-                                    alt="menu" />
-                            </button>
-                        </div>
-                    </ul>
                 </div>
 
                 {/* Action buttons */}
@@ -120,8 +90,40 @@ const Xeader = () => {
                         <span className="font-semibold text-blue-500">ZF</span>
                     </button>
                 </div>
-            </section>
 
+            </section>
+            <section className='lg:hidden max-md:flex items-center justify-between'>
+            <Link className="border px-2 py-2 rounded-full">BM</Link>
+            <ul className='flex items-center gap-x-5'>
+                        <li>
+                            {/* Mobile Hamburger */}
+                            <div className="lg:hidden">
+                                <button
+                                    onClick={() => setMenuOpen(!menuOpen)}
+                                    className="border py-2 px-2 rounded-md bg-white/15"
+                                >
+                                    <img
+                                        width={24}
+                                        height={24}
+                                        src={menu}
+                                        alt="menu" />
+                                </button>
+                            </div>
+                        </li>
+                        <div className="lg:hidden">
+                            <button
+                                onClick={() => setSettingsOpen(!settingsOpen)}
+                                className="border py-2 px-2 rounded-md bg-white/15"
+                            >
+                                <img
+                                    width={24}
+                                    height={24}
+                                    src={settings}
+                                    alt="menu" />
+                            </button>
+                        </div>
+                    </ul>
+            </section>
             {/* Mobile nav */}
             {menuOpen && (
                 <nav className="flex gap-x-2 lg:hidden p-4 fixed top-15 w-full z-50">
