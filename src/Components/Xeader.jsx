@@ -158,7 +158,7 @@ const Xeader = () => {
                 </nav>
             )}
             {settingsOpen && (
-                <div className='flex items-center gap-x-5 mt-5'>
+                <div className='flex items-center gap-x-5 mt-5 fixed top-15 left-10 w-full z-50'>
                     <button
                         className="border py-2 px-2 rounded-md bg-white/15">
                         <svg
