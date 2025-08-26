@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav > a.active {
+    @apply border-white text-white
+}
+
+/* Asosiy scroll bar */
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+/* Scroll track (orqa fon) */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(255, 255, 255);
+    background: #2B2223;
+}
+
+/* Scroll thumb (harakatlanadigan tugma) */
+::-webkit-scrollbar-thumb {
+    background: #3266BC;
+    /* Tailwind cobalt blue */
+}
+
+/* Scroll thumb hover paytida */
+::-webkit-scrollbar-thumb:hover {
+    background: #3266BC;
+    /* biroz quyuqroq ko‘k */
+}
