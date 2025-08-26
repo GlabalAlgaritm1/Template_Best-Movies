@@ -10,6 +10,7 @@ import settings from '../img/Img_icon/settings.png';
 
 const Xeader = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [settingsOpen, setSettingsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
     useEffect(() => {
@@ -30,7 +31,7 @@ const Xeader = () => {
                     <Link className="border px-2 py-2 rounded-full">BM</Link>
 
                     {/* Desktop nav */}
-                    <nav className="hidden md:flex items-center gap-x-5">
+                    <nav className="hidden lg:flex items-center gap-x-5">
                         <NavLink
                             to="/filmlar"
                             className="border rounded-md px-3 py-1 text-white/50 hover:text-white border-white/50 hover:border-white hover:transition-all hover:duration-200"
@@ -58,7 +59,7 @@ const Xeader = () => {
                     </nav>
 
                     {/* Mobile Hamburger */}
-                    <div className="md:hidden">
+                    <div className="lg:hidden">
                         <button
                             onClick={() => setMenuOpen(!menuOpen)}
                             className="border py-2 px-2 rounded-md bg-white/15"
@@ -106,7 +107,7 @@ const Xeader = () => {
 
             {/* Mobile nav */}
             {menuOpen && (
-                <nav className="flex gap-x-2 lg:hidden bg-[#171818]/95 p-4 fixed left-0 w-full">
+                <nav className="flex gap-x-2 lg:hidden bg-[#171818]/95 p-4 fixed top-16 w-full">
                     <NavLink
                         to="/filmlar"
                         className="border rounded-md px-3 py-1 text-white/50 hover:text-white border-white/50 hover:border-white hover:transition-all hover:duration-200 "
