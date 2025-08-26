@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router';
 // Data 
 import { Element } from '../Assets/Data';
 // Icons 
-import Search from '../img/Img_icon/Search.png';
+import Search from '../img/Img_icon/search.png';
 import notification from '../img/Img_icon/notification.png';
 import menu from '../img/Img_icon/menu.png';
 import settings from '../img/Img_icon/settings.png';
