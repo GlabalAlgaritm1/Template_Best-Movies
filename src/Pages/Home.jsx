@@ -4,6 +4,8 @@ import rasm2 from '../img/img_swipper/rasm2.jpg'
 import rasm3 from '../img/img_swipper/rasm3.webp'
 import { Element } from '../Assets/Data';
 import { Link } from 'react-router'
+import Arrow from '../Components/Arrow';
+import ScrollToTop from '../Components/ScrollToTop';
 
 // Fake data (har xil film list)
 const movies = [
@@ -102,7 +104,8 @@ const Home = () => {
       <Section title="Multfilmlar" />
 
       {/* Qo'shimcha ishonch uchun: 80px bo'sh joy (faqat mobil/planshet) */}
-      <div className="h-20 lg:hidden" />
+      <div className="h-10 lg:hidden" />
+      <ScrollToTop/>
     </section>
   )
 }
