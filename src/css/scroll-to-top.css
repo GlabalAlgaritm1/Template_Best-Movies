@@ -51,7 +51,7 @@
   }
   @media only screen and (max-width: 1024px) {
     .scroll-to-top.is-visible {
-      bottom: 70px;
+      bottom: 85px;
     }
   }
   
