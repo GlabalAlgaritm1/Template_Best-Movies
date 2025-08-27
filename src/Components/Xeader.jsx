@@ -73,7 +73,7 @@ const Xeader = () => {
                 </section>
 
                 {/* Mobile header */}
-                <section className='lg:hidden md:flex items-center justify-between'>
+                <section className='lg:hidden max-lg:flex items-center justify-between'>
                     <Link className="border px-2 py-2 rounded-full">BM</Link>
                     <ul className='flex items-center gap-x-5'>
                         <li>

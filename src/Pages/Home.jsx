@@ -94,11 +94,15 @@ const Home = () => {
   )
 
   return (
-    <section className={`${Element.Container} h-full`}>
+    // pb-20 => 80px; lg:pb-0 => desktopda olib tashlanadi
+    <section className={`${Element.Container} h-full pb-20 lg:pb-0`}>
       <Section title="Filmlar" />
       <Section title="Animelar" />
       <Section title="Seriallar" />
       <Section title="Multfilmlar" />
+
+      {/* Qo'shimcha ishonch uchun: 80px bo'sh joy (faqat mobil/planshet) */}
+      <div className="h-20 lg:hidden" />
     </section>
   )
 }
