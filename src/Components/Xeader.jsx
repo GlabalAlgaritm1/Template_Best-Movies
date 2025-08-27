@@ -40,7 +40,7 @@ const Xeader = () => {
     return (
         <>
             <header
-                className={`${Element.Container} sticky top-0 border-b border-b-blue-800 py-2 mb-2 transition-all duration-300 ${scrolled ? 'bg-[#171818]/95 shadow-sm shadow-blue-500 rounded-b-sm' : 'bg-transparent'}`}
+                className={`${Element.Container} sticky top-0 border-b border-b-blue-800 py-2 mb-2 transition-all duration-300 z-50 ${scrolled ? 'bg-[#171818]/95 shadow-sm shadow-blue-500 rounded-b-sm' : 'bg-transparent'}`}
             >
                 <section className="flex justify-between items-center">
                     <div className="flex items-center gap-x-5">
@@ -73,7 +73,7 @@ const Xeader = () => {
                 </section>
 
                 {/* Mobile header */}
-                <section className='lg:hidden max-md:flex items-center justify-between'>
+                <section className='lg:hidden md:flex items-center justify-between'>
                     <Link className="border px-2 py-2 rounded-full">BM</Link>
                     <ul className='flex items-center gap-x-5'>
                         <li>
@@ -136,10 +136,10 @@ const Xeader = () => {
                     <li>
                         <Link className='flex flex-col items-center'>
                             <img 
-                            width={24}
-                            height={24}
+                            width={35}
+                            height={35}
                             src={Search} alt="" />
-                            <span className='max-sm:text-sm max-md:text-base mt-[2px]'>Qidirish</span>
+                            <span className='max-sm:text-sm max-md:text-base'>Qidirish</span>
                         </Link>
                     </li>
                     
